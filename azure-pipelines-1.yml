@@ -34,7 +34,6 @@ steps:
 - task: Maven@3
   displayName: 'Maven pom.xml'
   inputs:
-    mavenPomFile: '$(Parameters.mavenPOMFile)'
     codeCoverageToolOption: JaCoCo
     jdkVersionOption: 1.17
     sonarQubeRunAnalysis: true
